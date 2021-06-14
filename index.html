@@ -89,7 +89,7 @@
       });
 
       socket.on('response', ({ value, result, ...misc }) => {
-        outcome.innerHTML = `"${value}" ${result ? 'is' : 'is not'} noticing that a TA does not solve the underlying equity issue.`;
+        outcome.innerHTML = `"${value}" ${result === '1' ? 'is' : 'is not'} noticing that a TA does not solve the underlying equity issue.`;
         console.log(misc);
       });
     </script>
