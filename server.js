@@ -21,7 +21,7 @@ async function isTA(input) {
   }
   console.log(stdout);
   
-  return {stdout.toString('utf8') === 'Yes' ? '1': '2'}; //Boolean here: if yes, returns true --> 1
+  return stdout.toString('utf8') === 'Yes' ? '1': '2'; //Boolean here: if yes, returns true --> 1
 }
 
 const express = require('express');
